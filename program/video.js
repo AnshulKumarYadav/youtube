@@ -1,7 +1,7 @@
 let videoData = JSON.parse(localStorage.getItem('Video'));
 let container = document.querySelector("#container");
 videoData.map((el)=>{
-
+      container.innerHTML=null;
          let iframe = document.createElement("iframe");
       iframe.src =`https://www.youtube.com/embed/${el.id}`;
       iframe.width="100%";
